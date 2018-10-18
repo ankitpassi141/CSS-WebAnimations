@@ -17,7 +17,7 @@ body {
 
   section
   {
-      background-image: url("https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8d3dbc6883f359a2fb11b6466955a941");
+      /* background-image: url("https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8d3dbc6883f359a2fb11b6466955a941"); */
       background-color: #fff;
       background-position: center;
       background-repeat: no-repeat;
@@ -26,7 +26,7 @@ body {
 
   section > div
   {
-      background-color:rgba(0, 0, 0, 0.2);
+      /* background-color:rgba(0, 0, 0, 0.2); */
   }
   
 
@@ -120,6 +120,11 @@ body {
         left: 63%;
         top:44%;
     }
+    #mountains_backgroundMountains
+    {
+        width: 300px;
+        height: 300px;
+    }
   }
 
   @media (min-width: 576px) and (max-width: 767.98px)
@@ -142,6 +147,11 @@ body {
         height: 5px;
         left: 59%;
         top:49%;
+    }
+    #mountains_backgroundMountains
+    {
+        width: 400px;
+        height: 400px;
     }
   }
 
@@ -167,6 +177,11 @@ body {
         left: 54%;
         top:52px;
     }
+    #mountains_backgroundMountains
+    {
+        width: 600px;
+        height: 600px;
+    }
   }
 
   @media (min-width: 992px) and (max-width: 1199.98px)
@@ -190,6 +205,11 @@ body {
         left: 53%;
         top:44%;
     }
+    #mountains_backgroundMountains
+    {
+        width: 600px;
+        height: 600px;
+    }
   }
 
   @media (min-width: 1200px) 
@@ -212,6 +232,11 @@ body {
         height: 10px;
         left: 52%;
         top:44%;
+    }
+    #mountains_backgroundMountains
+    {
+        width: 800px;
+        height: 800px;
     }
   }
 
@@ -385,8 +410,121 @@ body {
 
 
 
-  #mountains_backgroundMountains
+  
+  #balloon
   {
-      width: 600px;
-      height: 600px;
+      animation: balloonMoving 2.5s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+  }
+
+  #cloud5, #cloud3
+  {
+      animation: cloudRightToleft 30s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+      animation-iteration-count: infinite;
+  }
+
+  #cloud2
+  {
+      animation-delay: 5s;
+      animation: cloudRightToleft_2 30s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+      animation-iteration-count: infinite;
+  }
+
+  #cloud1, #cloud4
+  {
+      animation-delay: 2s;
+    animation: cloudRightToleft 35s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+    animation-iteration-count: infinite;
+  }
+  
+  #river_stroke6, #river_stroke5
+  {
+    animation: riverMovement 2.5s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  #river_stroke4, #river_stroke3
+  {
+      animation-delay: 3s;
+    animation: riverMovement 4s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  #river_stroke1, #river_stroke2
+  {
+      animation-delay: 1s;
+    animation: riverMovement 2s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  #fish
+  {
+      animation-delay: 1s;
+    animation: fishMovement 30s cubic-bezier(0.37, -0.03, 0.71, 0.97);
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes balloonMoving
+  {
+      from
+      {
+          transform: translateY(-20px);
+      }
+      to
+      {
+          transform: translatey(20px);
+      }
+  }
+
+  @keyframes cloudRightToleft
+  {
+    from
+    {
+        transform: translateX(-90vh);
+    }
+    to
+    {
+        transform: translateX(60vh);
+    }
+  }
+
+  @keyframes cloudRightToleft_2
+  {
+    from
+    {
+        transform: translateX(-50vh);
+    }
+    to
+    {
+        transform: translateX(80vh);
+    }
+  }
+
+  @keyframes riverMovement
+  {
+      from
+      {
+          transform: translateX(-10px);
+      }
+      to
+      {
+          transform: translateX(10px);
+      }
+  }
+
+  @keyframes fishMovement
+  {
+      from
+      {
+          transform: translateX(60vh);
+      }
+      to
+      {
+          transform: translateX(-60vh);
+      }
   }
