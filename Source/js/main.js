@@ -46,8 +46,53 @@ function changePage(element)
         break;
 
         case "mountains_next":
+        window.location = '/views/index5.html';
+        break;
+
+        /* Sixth Page */
+        case "menuAnimations_prev":
+        window.location = '/views/index4.html';
+        break;
+
+        case "menuAnimations_next":
         alert("Next Page Coming Soon");
         break;
     }
+
+}
+
+let ham_1 = document.getElementsByClassName("hamburger_1");
+let ham_2 = document.getElementsByClassName("hamburger_2");
+let ham_3 = document.getElementsByClassName("hamburger_3");
+let ham_4 = document.getElementsByClassName("hamburger_4");
+
+function hamburgerAnimation_toggle()
+{
+    // $(".hamburger_1").addClass('animated');
+    // setTimeout(function() {
+    //       $(".hamburger_1").removeClass('animated');
+    // }, 1500);
+
+    ham_1[0].classList.add("animated");
+    ham_2[0].classList.add("animated");
+    ham_3[0].classList.add("animated");
+    ham_4[0].classList.add("animated");
+
+    setTimeout(function()
+    {
+        ham_1[0].classList.remove("animated");
+        ham_2[0].classList.remove("animated");
+        ham_3[0].classList.remove("animated");
+        ham_4[0].classList.remove("animated");
+    },2000);
+
+    // ham_1.style.animation="hamburgerAnimation_opacity 1s";
+    // ham_3.style.animation="hamburgerAnimation_opacity 1s";
+    // ham_1.style.removeProperty="hamburgerAnimation_opacity";
+    // ham_3.style.removeProperty="animation";
+
+    // ham_2.style.animation="hamburgerAnimation 1s";
+
+    // ham_4.style.animation="hamburgerAnimation_rev 1s";
 
 }
