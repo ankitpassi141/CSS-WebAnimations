@@ -108,6 +108,11 @@ body {
       background-color: #FF5722;
   }
 
+  .index05_column_02
+  {
+      background-color: #A4DAAC;
+  }
+
   #hamburger
   {
       cursor: pointer;
@@ -669,4 +674,24 @@ body {
       {
           opacity: 0;
       }
+  }
+
+  .toggleText_Off
+  {
+      color: #6FC57C;
+      font-size: medium;
+      font-weight: bold;
+  }
+
+  .toggleText_On
+  {
+      color: #fff;
+      font-size: medium;
+      font-weight: bold;
+  }
+
+  #toggleBtn
+  {
+      width: 80px;
+      height: 80px;
   }
