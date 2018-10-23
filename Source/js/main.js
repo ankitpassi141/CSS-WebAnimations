@@ -84,7 +84,7 @@ function hamburgerAnimation_toggle()
         ham_2[0].classList.remove("animated");
         ham_3[0].classList.remove("animated");
         ham_4[0].classList.remove("animated");
-    },2000);
+    },400);
 
     // ham_1.style.animation="hamburgerAnimation_opacity 1s";
     // ham_3.style.animation="hamburgerAnimation_opacity 1s";
