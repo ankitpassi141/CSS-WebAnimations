@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0; 
+    width: 100vw;
+    height: 100vh;
+  }
+
+  div
+  {
+      /* border: 1px solid black; */
+  }
+
+  .row
+  {
+      height: 100vh;
+  }
+
+  section
+  {
+      /* background-image: url("https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8d3dbc6883f359a2fb11b6466955a941"); */
+      background-color: #fff;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  section > div
+  {
+      /* background-color:rgba(0, 0, 0, 0.2); */
+  }
+  
+
+  .about_div_right, .about_div_left
+  {
+      color:#ccc;
+  }
+  .about_div_right:hover, .about_div_left:hover
+  {
+      color: #fff;
+      background-color:rgba(255, 255, 255,0.1);
+      cursor: pointer;
+  }
+  
+
+  .mainAnimation
+  {
+      height: 80vh;
+      width: 100vw;
+  }
+
+  #menuAnimations
+  {
+      background: #000;
+  }
+
+  .index05_column_01
+  {
+      background-color: #FF5722;
+  }
+
+  #hamburger
+  {
+      cursor: pointer;
+  }
+
+  @media (max-width: 575.98px)
+  {
+
+    #hamburger
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main_toggleBtn
+  {
+      width: 60px;
+      height: 60px;
+  }
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px)
+  {
+
+    #hamburger
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main_toggleBtn
+  {
+      width: 75px;
+      height: 75px;
+  }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px)
+  {
+
+    #hamburger
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main_toggleBtn
+  {
+      width: 100px;
+      height: 100px;
+  }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px)
+  {
+
+    #hamburger
+    {
+        width: 75px;
+        height: 75px;
+    }
+    .main_toggleBtn
+  {
+      width: 100px;
+      height: 100px;
+  }
+  }
+
+  @media (min-width: 1200px) 
+  {
+
+    #hamburger
+    {
+        width: 75px;
+        height: 75px;
+    }
+    .main_toggleBtn
+  {
+      width: 100px;
+      height: 100px;
+  }
+  }
+
+  .hamburger_2
+  {
+      transform-origin: center;
+
+  }
+
+  .hamburger_2.animated
+  {
+      transform-origin: center;
+      animation: hamburgerAnimation 0.2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      -webkit-filter: drop-shadow( 0px 2px 3px #000 ); 
+        filter: drop-shadow( 0px 2px 3px #000 );
+  }
+
+  .hamburger_4
+  {
+      transform-origin: center;
+      /* animation: hamburgerAnimation_rev 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; */
+  }
+
+  .hamburger_4.animated
+  {
+      animation: hamburgerAnimation_rev 0.2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      -webkit-filter: drop-shadow( 0px 2px 3px #000 ); 
+        filter: drop-shadow( 0px 2px 3px #000 );
+  }
+
+  .hamburger_1.animated, .hamburger_3.animated
+  {
+    animation: hamburgerAnimation_opacity 0.2s;
+    animation-direction: alternate;  
+    animation-iteration-count: infinite;
+    -webkit-filter: drop-shadow( 0px 2px 3px #000 ); 
+        filter: drop-shadow( 0px 2px 3px #000 ); 
+  }
+
+
+  #hamburger:hover
+  {
+        -webkit-filter: drop-shadow( 0px 2px 3px #000 ); 
+        filter: drop-shadow( 0px 2px 3px #000 );
+  }
+
+  
+  @keyframes hamburgerAnimation
+  {
+      to
+      {
+        transform: rotate(45deg);
+      }
+  }
+
+  @keyframes hamburgerAnimation_rev
+  {
+      to
+      {
+        transform: rotate(-45deg);
+      }
+  }
+
+  @keyframes hamburgerAnimation_opacity
+  {
+      to
+      {
+          opacity: 0;
+      }
+  }
+
+
+  /* By Default, Toggle On Segment */
+
+
+  .toggle_mainBG
+  {
+      background-color: #A4DAAC;
+  }
+
+  .toggleText
+  {
+      font-size: larger;
+      font-weight: bold;
+      color: #fff;
+  }
+
+  .toggleText_On
+  {
+      color: #fff;
+  }
+
+  .toggleText_Off
+  {
+      color: #85daac;
+  }
+
+  .main_toggleBtn
+  {
+      filter: drop-shadow(0px 0px 10px #111);
+  }
+
+  .toggle_BaseCircle
+  {
+      fill: #A4DAAC;
+      cursor: pointer;
+  }
+
+  .toggleoffCircle
+  {
+    visibility: hidden;
+    /* transform: rotate(-50deg); */
+  }
+
+  .toggleOnCircle_Animation
+  {
+    visibility: visible;
+    fill: none;
+    stroke-width: 1px;
+    animation: onoffToggle_Animation 0.5s cubic-bezier(0.4, 0, 0.51, 0.99);
+    animation-fill-mode: forwards;
+    transform-origin: 50% 50%;
+    will-change: transform;
+  }
+
+  .toggle_onLine_animation
+  {
+      animation: onoffToggleLine_Animation 0.5s cubic-bezier(0.4, 0, 0.51, 0.99);
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes onoffToggle_Animation
+  {
+      from
+      {
+        stroke-dasharray: 30px;
+      }
+      to
+      {
+          transform: rotate(310deg);
+          stroke-dasharray: 20px;
+        }
+  }
+
+
+  @keyframes onoffToggleLine_Animation
+  {
+      from
+      {
+          opacity: 0;
+          width: 1.4;
+          height: 8.22;
+      }
+      to
+      {
+          opacity: 1;
+          width: 1.25;
+          height: 5;
+      }
+  }
+
+  /*  */
+
+
+  /* OFF Toggle Segment */
+
+  .toggle_mainBG_Off
+  {
+      background-color: #BC3535;
+  }
+
+  .toggleText_Off
+  {
+      color: #8A3535;
+  }
+
+  .toggle_BaseCircle_Off
+  {
+      fill: #BC3535;
+      filter: drop-shadow(0px 0px 5px #fff);
+  }
+
+  .on_Line
+  {
+      visibility: hidden;
+
+  }
+
+  .off_Line
+  {
+      visibility: visible;
+  }
+
+
+
+
+
+
+  

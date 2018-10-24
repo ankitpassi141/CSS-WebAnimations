@@ -96,3 +96,43 @@ function hamburgerAnimation_toggle()
     // ham_4.style.animation="hamburgerAnimation_rev 1s";
 
 }
+
+let flag = 1;
+
+function toggleButton_Animation()
+{
+    if(flag == 1)
+    {
+        document.getElementsByClassName("toggle_mainBG")[0].classList.add("toggle_mainBG_Off");
+
+        document.getElementById("toggle_Off").style.color="#fff";
+        document.getElementById("toggle_On").style.color="#BC6164";
+
+        document.getElementsByClassName("toggle_BaseCircle")[0].classList.add("toggle_BaseCircle_Off");
+        document.getElementsByClassName("toggleoffCircle")[0].classList.add("off_Line");
+
+        document.getElementsByClassName("toggleoffCircle")[0].classList.remove("toggleOnCircle_Animation");
+
+        document.getElementsByClassName("toggle_onLine")[0].classList.remove("toggle_onLine_animation");
+
+        document.getElementsByClassName("toggle_onLine")[0].classList.add("on_Line");
+        flag = 0;
+    }
+    else
+    {
+        document.getElementsByClassName("toggle_mainBG")[0].classList.remove("toggle_mainBG_Off");
+    
+        document.getElementById("toggle_On").style.color="#fff";
+        document.getElementById("toggle_Off").style.color="#85DAAC";
+
+        document.getElementsByClassName("toggle_BaseCircle")[0].classList.remove("toggle_BaseCircle_Off");
+        document.getElementsByClassName("toggleoffCircle")[0].classList.remove("off_Line");
+        
+        document.getElementsByClassName("toggleoffCircle")[0].classList.add("toggleOnCircle_Animation");
+
+        document.getElementsByClassName("toggle_onLine")[0].classList.add("toggle_onLine_animation");
+
+        document.getElementsByClassName("toggle_onLine")[0].classList.remove("on_Line");
+        flag = 1;
+    }
+}
