@@ -263,6 +263,7 @@ body {
     visibility: visible;
     fill: none;
     stroke-width: 1px;
+    stroke-linecap: round;
     animation: onoffToggle_Animation 0.5s cubic-bezier(0.4, 0, 0.51, 0.99);
     animation-fill-mode: forwards;
     transform-origin: 50% 50%;
