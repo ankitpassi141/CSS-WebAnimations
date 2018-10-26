@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 body {
     margin: 0;
     padding: 0; 
@@ -336,6 +338,96 @@ body {
   .off_Line
   {
       visibility: visible;
+  }
+
+  #index_row_01_col_03
+  {
+      background-color: #2196F2;
+  }
+
+
+  #submit_Button
+  {
+      /* color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      background-color: #2196F2;
+      border-style: solid;
+      border-color: #fff;
+      border-radius: 50px; */
+      height: 100px;
+      outline: none;
+      /* filter: drop-shadow(0px 0px 2px #fff); */
+      /* animation: submitButton_Contract 2.5s;
+      animation-iteration-count: infinite; */
+  }
+
+  #submit_Button:hover
+  {
+    filter: drop-shadow(0px 0px 5px rgba(238,238,238,0.8));
+  }
+
+
+
+  #submitButton_text
+  {
+      animation: textOpacity 2.5s;
+  }
+
+  #main_submitButton
+  {
+      outline: none;
+      transform-origin: 50% 50%;
+
+  }
+
+  @keyframes textOpacity
+  {
+      to
+      {
+          opacity: 0;
+      }
+  }
+
+  @keyframes buttonTransformation
+  {
+      to
+      {
+          transform: scale(0.2);
+          width: 50%;
+      }
+  }
+
+  .circleGroup 
+  {
+      max-width: 15rem;
+      width: 50%;
+      height: auto;
+      stroke-linecap: round;
+  }
+
+  circle
+  {
+      fill: none;
+      stroke-width: 5px;
+      animation: rotatingCircle 5s cubic-bezier(0.4, 0, 0.51, 0.99);
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      transform-origin: 170px 170px;
+      will-change: transform;
+  }
+  
+  .circleGroup circle:nth-of-type(1) 
+  {
+      stroke-dasharray: 0px;
+  }
+
+  @keyframes rotatingCircle
+  {
+      50%
+      {
+          stroke-dasharray:550px;
+      }
   }
 
 
