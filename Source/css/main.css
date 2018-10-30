@@ -73,7 +73,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #ddd;
+    background-color: #555;
     /* margin-bottom:  */
     
 
@@ -123,8 +123,8 @@ body {
     {
         width: 100px;
         height: 5px;
-        left: 63%;
-        top:44%;
+        left: 63.5%;
+        top:46.2%;
     }
     #mountains_backgroundMountains
     {
@@ -151,8 +151,8 @@ body {
     {
         width: 100px;
         height: 5px;
-        left: 59%;
-        top:49%;
+        left: 57.5%;
+        top:48%;
     }
     #mountains_backgroundMountains
     {
@@ -180,8 +180,8 @@ body {
     {
         width: 150px;
         height: 10px;
-        left: 54%;
-        top:52px;
+        left: 53%;
+        top:51%;
     }
     #mountains_backgroundMountains
     {
@@ -209,7 +209,7 @@ body {
         width: 150px;
         height: 10px;
         left: 53%;
-        top:44%;
+        top:46%;
     }
     #mountains_backgroundMountains
     {
@@ -236,8 +236,8 @@ body {
     {
         width: 150px;
         height: 10px;
-        left: 52%;
-        top:44%;
+        left: 51.6%;
+        top:46%;
     }
     #mountains_backgroundMountains
     {
